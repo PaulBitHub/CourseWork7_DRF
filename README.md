@@ -1,39 +1,50 @@
-Installation and Setup
-1. Clone the Repository
+# Installation and Setup
+
+## 1. Clone the Repository
+```bash
 git clone git@github.com:PaulBitHub/CourseWork7_DRF
 cd CourseWork7-DRF
-2. Copy the env.example file to .env:
+```
+## 2. Copy the env.example file to .env:
 Open.env and replace the values of the variables with your own
-
+```bash
 cp .env.sample .env
-3. Install Dependencies
+```
+## 3. Install Dependencies
 The project uses Poetry for dependency management. Ensure Poetry is installed, then run the following command to install all dependencies:
-
+```bash
 pip install -r requirements.txt
-4. Start Migrations
+``` 
+## 4. Start Migrations
 To start migrations, use the following command:
-
+```bash
 python3 manage.py migrate
-5. Create Superuser
+``` 
+## 5. Create Superuser
 Enter the command in the terminal:
-
+```bash
 python3 manage.py create_superuser
-6. Load Fixture
+``` 
+## 6. Load Fixture
 Loading test fixtures for the database:
-
+```bash
 python3 manage.py loaddata data.json
-7. Create Group
+``` 
+## 7. Create Group
 Loading test fixtures for the database:
-
+```bash
 python3 manage.py create_groupe
-8. Create Manager and Content-Manager
+``` 
+## 8. Create Manager and Content-Manager
 Enter the command in the terminal:
-
+```bash
 python3 manage.py create_staff
-9. Run Server
+``` 
+## 9. Run Server
 To run server, use the following command:
-
+```bash
 python3 manage.py runserver
+``` 
 The server will be available at http://127.0.0.1:8000
 
 
